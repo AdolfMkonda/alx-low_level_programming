@@ -1,11 +1,12 @@
 #include<stdio.h>
 /**
- * main - A program to print reverse alphabet
+ * main - A program to print lowercase alphabet in reverse
  * Return: 0 (success)
  */
 int main(void)
 {
 	char c;
+	
 	c = 'z';
 	while
 		(c >= 'a')
