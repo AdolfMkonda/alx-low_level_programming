@@ -1,4 +1,4 @@
-#include<main.h>
+#include<unstid.h>
 /**
  * main - A to print character to stdout
  * Return: 1 (success)
