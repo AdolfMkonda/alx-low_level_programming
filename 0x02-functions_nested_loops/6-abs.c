@@ -2,6 +2,7 @@
 /**
  * _abs - checks absolute value
  * @n: the int to be checked
+ * Return: positive or negative
  */
 int _abs(int n)
 {
