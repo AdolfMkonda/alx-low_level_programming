@@ -4,7 +4,7 @@
  * @c: char to be checked
  * Return: 1 for upper else 0
  */
-int _isupper(int )
+int _isupper(int x)
 {
 	if (x >= 'A' && x <= 'Z')
 	{
