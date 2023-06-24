@@ -10,6 +10,8 @@ int main(void)
 	a = 'a';
 	while (a <= 'z')
 	{
+		if (a == e && a == q)
+			continue;
 		putchar(a);
 		a++;
 	}

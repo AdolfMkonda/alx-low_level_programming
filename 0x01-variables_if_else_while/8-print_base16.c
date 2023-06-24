@@ -9,13 +9,13 @@ int main(void)
 	int b;
 
 	a = 0;
-	b = 'A';
+	b = 'a';
 	while (a < 10)
 	{
 		putchar(a + '0');
 		a++;
 	}
-	while (b <= 'F')
+	while (b <= 'f')
 	{
 		putchar(b);
 		b++;
