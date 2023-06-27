@@ -3,7 +3,7 @@
  * print_alphabet_x10 - program that print alphabet in lowercase *10
  * Return: 0
  */
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
 	int a;
 	int c;

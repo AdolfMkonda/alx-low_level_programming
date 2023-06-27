@@ -1,7 +1,8 @@
+#include <stdio.h>
 #include "main.h"
 /**
- * print_to_98 - numbers from n to 98
- * @n: start point number
+ * print_to_98 - program that prints fron n to 98
+ * @n: starting number
  */
 void print_to_98(int n)
 {
@@ -11,13 +12,13 @@ void print_to_98(int n)
 		{
 			if (n == 98)
 			{
-				_putchar(n + '0');
-				_putchar('\n');
+				printf("%d", n);
+				printf("\n");
 				break;
 			}
 	else
 	{
-		printf(n + '0');
+		printf("%d, ", n);
 	}
 		}
 	}
@@ -27,14 +28,14 @@ void print_to_98(int n)
 		{
 			if (n == 98)
 			{
-				_putchar(n + '0');
-				_putchar('\n');
+				printf("%d", n);
+				printf("\n");
 				break;
 			}
 			else
 			{
-				_putchar(n +'0');
+				printf("%d, ", n);
 			}
 		}
 	}
-}
+}i
