@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * main - program that print 1 to 100 with fizzbuzz challenge
  * Return: 0
@@ -22,7 +23,7 @@ int main(void)
 			printf("FizzBuzz");
 		}
 		else
-			_putchar(i);
+			printf("%d", i);
 		_putchar('\n');
 	}
 	return (0);
