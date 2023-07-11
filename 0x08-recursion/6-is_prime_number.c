@@ -8,7 +8,7 @@ int is_prime_number(int n)
 {
 	if (n <= 1)
 		return (0);
-	return (prime(n));
+	return (aprime(n));
 }
 
 /**
@@ -17,11 +17,11 @@ int is_prime_number(int n)
  * @m: divisor
  * Return: 0
  */
-int prime(int n, int m)
+int aprime(int n, int m)
 {
 	if (n % m == 0)
 		return (0);
 	if (m == 1)
 		return (1);
-	return (prime(n, m - 1));
+	return (aprime(n, m - 1));
 }
