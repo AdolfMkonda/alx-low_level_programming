@@ -6,10 +6,22 @@
  */
 int is_prime_number(int n)
 {
-	int m;
-
 	if (n <= 1)
 		return (0);
-	if (n % m == 1 || n % 1 == 1)
-		return (is_prime_number(n));
+	return (_prime(n));
+}
+
+/**
+ * _prime - program that return prime numbers
+ * @n: prime
+ * @m: divisor
+ * Return: 0
+ */
+int _prime(int n, int m)
+{
+	if (n % m == 0)
+		return (0);
+	if (m == 1)
+		return (1);
+	return (_prime(n, m - 1));
 }
