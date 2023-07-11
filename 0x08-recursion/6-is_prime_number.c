@@ -17,7 +17,7 @@ int is_prime_number(int n)
  * @m: divisor
  * Return: 0
  */
-int _prime(int n, int m)
+int prime(int n, int m)
 {
 	if (n % m == 0)
 		return (0);
