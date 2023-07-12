@@ -10,8 +10,8 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	int n;
-	int m;
+	int n = 0;
+	int m = 0;
 
 	if (argc == 3)
 	{
