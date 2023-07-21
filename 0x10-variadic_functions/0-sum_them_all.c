@@ -6,20 +6,20 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	int total = 0;
-	unsigned int i = 0;
 	va_list args;
+	unsigned int i = 0;
+	int sum = 0;
 
-	if (n != 0;)
+	if (n != 0)
 	{
-		va_start (args, n);
+		va_start(args, n);
 		while (i < n)
 		{
-			total += va_arg(args, int);
+			sum += va_arg(args, int);
 			i++;
 		}
 		va_end(args);
-		return (total);
+		return (sum);
 	}
 	return (0);
 }
