@@ -6,20 +6,29 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int uni;
-	int len, base_two;
+	unsigned int result;
+	int index = 0;
+
+	result = 0;
 
 	if (!b)
 		return (0);
-	uni = 0;
-	for (len = 0; b[len] != '\0'; len++)
-		;
-	for (len--, base_two = 1; len >= 0; len--, base_two *= 2)
+
+	while (b[index] != '\0')
 	{
-		if (b[len] != '0' && b[len] != '1')
+		char currentChar = b[index];
+
+		if (currentChar == '0')
+		{
+			result = (result << 1);
+		}
+		else if (currentChar == '1')
+		{
+			result = (result << 1) | 1;
+		}
+		else
 			return (0);
-		if (b[len] & 1)
-			uni += base_two;
+		index++;
 	}
-	return (uni);
+	return (result);
 }
